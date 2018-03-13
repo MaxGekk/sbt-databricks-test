@@ -10,12 +10,12 @@ import sbtdatabricks.DatabricksPlugin.autoImport._
 dbcUsername := "token"
 
 // Your password (Can be set as an environment variable)
-dbcPassword := "dapie9ad18b666edcfeca45d39d1d8b7afdb"
+dbcPassword := "fake-token-edcfeca45d39d1d8b7afdb"
 
 // The URL to the Databricks Cloud DB Api.!
 // Note: this plugin currently does not support the /api/2.0 endpoint, so values using that
 // endpoint will be automatically rewritten to use /api/1.2.
-dbcApiUrl := "https://field-eng.cloud.databricks.com"
+dbcApiUrl := "https://<shard-name>.cloud.databricks.com"
 
 // Add any clusters that you would like to deploy your work to. e.g. "My Cluster"
 // or run dbcExecuteCommand
